@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: #f0f0f0;
+    }
+    .login-container {
+      max-width: 300px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .login-form {
+      margin-top: 20px;
+    }
+    .form-control {
+      height: 40px;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+    }
+    .btn-login {
+      background-color: #34C759;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    .btn-login:hover {
+      background-color: #2E865F;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h2 class="text-center">Login</h2>
+    <form class="login-form">
+      <div class="form-group">
+        <label for="username">Email</label>
+        <input type="text" class="form-control" id="username" placeholder="Enter Email">
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" class="form-control" id="password" placeholder="Enter password">
+      </div>
+      <button class="btn-login">Login</button>
+      <label>wana reg.</label><a href="reg.html">reg</a>
+    </form>
+  </div>
+</body>
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-datastore.js"></script>
+
+    <!-- Our script must be loaded after firebase references -->
+    <script src="login.js"></script>
+    <script src="firestore.js"></script>
+    <script src="indexother.js"></script>
+</html>
